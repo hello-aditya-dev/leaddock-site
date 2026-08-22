@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docs — Install & customize LeadDock</title>
+<meta name="description" content="Quickstart install guide, demo mode, white-label customization and troubleshooting for the LeadDock WhatsApp Web CRM.">
+<link rel="canonical" href="https://leaddock.vercel.app/docs">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LeadDock">
+<meta property="og:title" content="Docs — Install & customize LeadDock">
+<meta property="og:description" content="Quickstart install guide, demo mode, white-label customization and troubleshooting for the LeadDock WhatsApp Web CRM.">
+<meta property="og:url" content="https://leaddock.vercel.app/docs">
+<meta property="og:image" content="https://leaddock.vercel.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><span class="brand-mark">LD</span>LeadDock</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/features">Features</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/demo">Demo</a></li>
+      <li><a href="/for-agencies">For Agencies</a></li>
+      <li><a href="/docs" aria-current="page">Docs</a></li>
+      <li class="nav-cta"><a class="btn btn-primary" href="/pricing">Get LeadDock — $59</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><span aria-current="page">Home</span></nav>
+    <h1>Documentation</h1>
+    <p class="lede">Install, explore with demo data, make it yours, and get help when you need it.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:20px;">
+  <div class="container prose">
+    <h2 style="margin-top:0;">Quickstart</h2>
+    <ol>
+      <li><strong>Unzip</strong> your LeadDock download.</li>
+      <li>Open Chrome and go to <code>chrome://extensions</code>.</li>
+      <li>Enable <strong>Developer mode</strong> (top right).</li>
+      <li>Click <strong>Load unpacked</strong> and select the unzipped folder.</li>
+      <li>Open <strong>web.whatsapp.com</strong>. The LeadDock panel appears beside any chat.</li>
+    </ol>
+    <h2>Explore with demo data</h2>
+    <p>On first load LeadDock seeds fictional demo contacts so you can click through statuses, notes, quick replies and follow-ups immediately. Reset any time from Options → Reset Demo Data.</p>
+    <h2>Make it yours</h2>
+    <ul>
+      <li>Edit <code>src/config/brand.js</code> — name, colors, support email, links.</li>
+      <li>Replace the icons in <code>assets/icons/</code>.</li>
+      <li>Run <code>npm install &amp;&amp; npm run build</code> to produce a fresh <code>dist/</code>.</li>
+    </ul>
+    <h2>Troubleshooting</h2>
+    <ul>
+      <li><strong>Panel not appearing?</strong> Refresh the WhatsApp Web tab after loading the extension.</li>
+      <li><strong>Contact not detected?</strong> Open the Diagnostics modal from the panel menu and include its output when emailing support.</li>
+      <li><strong>Data question?</strong> Everything lives locally — use Options → Export Backup before major changes.</li>
+    </ul>
+    <div class="notice"><strong>Support:</strong> witejackel@gmail.com — include your order reference and, for technical issues, the diagnostics output.</div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="/"><span class="brand-mark">LD</span>LeadDock</a>
+        <p style="margin-top:14px; max-width:30em;">The lightweight CRM layer for WhatsApp Web. Capture the lead, add context, follow up, close the deal.</p>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/demo">Demo</a></li>
+        <li><a href="/faq">FAQ</a></li>
+      </ul></div>
+      <div><h4>Solutions</h4><ul>
+        <li><a href="/whatsapp-crm">WhatsApp CRM</a></li>
+        <li><a href="/whatsapp-lead-tracker">Lead tracker</a></li>
+        <li><a href="/whatsapp-quick-replies">Quick replies</a></li>
+        <li><a href="/for-agencies">For agencies</a></li>
+      </ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/docs">Docs</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/license">License</a></li>
+        <li><a href="mailto:witejackel@gmail.com">Support</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LeadDock. All rights reserved.</span>
+      <span>LeadDock is an independent productivity extension for WhatsApp Web. Not affiliated with or endorsed by WhatsApp or Meta.</span>
+    </div>
+  </div>
+</footer>
+<script src="/site.js" defer></script>
+</body>
+</html>
