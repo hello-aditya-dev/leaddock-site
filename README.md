@@ -9,7 +9,7 @@ zero trackers, system fonts. Deployed on Vercel.
 2. Vercel → Add New Project → import this repo.
 3. Framework preset: **Other**. Build command: **(empty)**. Output dir: **./**
 4. Name the project exactly **`leaddock`** so the domain is
-   `https://leaddock.vercel.app` (all canonical URLs assume this).
+   `https://leaddock-site.vercel.app` (all canonical URLs assume this).
 
 ## Regenerate pages
 
@@ -34,6 +34,6 @@ lists only canonical URLs.
 
 ## Domain swap
 
-If you point a custom domain instead of `leaddock.vercel.app`, replace the
+If you point a custom domain instead of `leaddock-site.vercel.app`, replace the
 old domain across `build.js`, `index.html`, `vercel.json` (none), then run
 `node build.js`.

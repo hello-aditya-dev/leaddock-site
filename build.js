@@ -6,7 +6,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const SITE = "https://leaddock.vercel.app";
+const SITE = "https://leaddock-site.vercel.app";
 const YEAR = 2026;
 
 const NAV = [
@@ -34,10 +34,12 @@ function head(title, desc, canonicalPath) {
 <meta property="og:url" content="${url}">
 <meta property="og:image" content="${SITE}/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0f766e">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 `;
 }
 
@@ -57,7 +59,7 @@ function header(active) {
   </div>
 </header>
 
-<main>
+<main id="main">
 `;
 }
 
@@ -186,7 +188,7 @@ const pricingBody =
           <li>All v1.x updates included</li>
           <li>Email support</li>
         </ul>
-        <a class="btn btn-primary btn-lg" href="#" rel="nofollow">Buy Commercial — $59</a>
+        <a class="btn btn-primary btn-lg" href="mailto:witejackel@gmail.com?subject=Order%20LeadDock%20Commercial%20(%2459)" rel="nofollow">Buy Commercial — $59</a>
       </div>
       <div class="price-card">
         <h3>Agency</h3>
@@ -200,10 +202,11 @@ const pricingBody =
           <li>All v1.x updates included</li>
           <li>Email support</li>
         </ul>
-        <a class="btn btn-secondary btn-lg" href="#" rel="nofollow">Buy Agency — $99</a>
+        <a class="btn btn-secondary btn-lg" href="mailto:witejackel@gmail.com?subject=Order%20LeadDock%20Agency%20(%2499)" rel="nofollow">Buy Agency — $99</a>
       </div>
     </div>
     <p style="text-align:center; margin-top:22px; font-size:.92rem; color:var(--muted);">14-day refund window if the source hasn't been downloaded. <a href="/license">Full license terms →</a></p>
+    <p class="order-note">Click a buy button to order by email — your download links and license are sent the same day.</p>
   </div>
 </section>
 
